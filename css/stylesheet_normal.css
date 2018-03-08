@@ -695,7 +695,7 @@ input[type="radio"]:checked + label {
 
 	.mobile_menu {
 		width: 13em;
-		padding-left: 1em;
+		padding-left: 0.625em;
 		position: fixed;
 		top: 4em;
 		right: -17em;
