@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BrandLy Online Clothing Store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet_normal.css">
+	<script type="text/javascript" src="js/script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<!-- Fixed container for top desktop menu -->
+		<div class="container header_container">
+			
+			<figure class="logo col-1">
+				<a href="#">
+						<img src="img/header_logo.svg" alt="BrandLy">
+				</a>
+			</figure>
+
+			<!--Mobile burger menu ver. Hidden in desktop ver.-->
+			<div class="mobile_menu_container">
+				
+				<input type="checkbox" id="burger_ico">
+				<label for="burger_ico" class="burger_ico"></label>
+
+				<div class="mobile_menu">
+					<form>
+						<input type="text" name="Search" placeholder="Search here">
+						<button type="submit"><img src="img/button_search.svg" alt="search button"></button>
+					</form>
+					<ul class="mobile_nav">
+						<li class="mobile_nav_item"><a href="#">Shop</a></li>
+						<li class="mobile_nav_item"><a href="#">Brands</a></li>
+						<li class="mobile_nav_item"><a href="#">Blog</a></li>
+						<li class="mobile_nav_item"><a href="#">About</a></li>
+						<li class="mobile_nav_item"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Regular menu ver -->
+			<nav class="col-11 regular_menu">
+				<ul class="nav">
+					<li class="nav_item"><a href="#">Home</a></li>
+					<li class="nav_item"><a href="#">Shop</a></li>
+					<li class="nav_item"><a href="#">Brands</a></li>
+					<li class="nav_item"><a href="#">Blog</a></li>
+					<li class="nav_item"><a href="#">About</a></li>
+					<li class="nav_item"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Slider container, and list with slides -->
+		<section class="col-12">
+			<ul class="header_slider">
+				<li class="image slide1 shown">
+					<h2 class="header_heading_2">Spring / Summer Collection</h2>
+					<h1 class="header_heading_1">Up to 60% discount on new arrivals</h1>
+					<p class="header_pharagraph">Trending new items, from creators around the world</p>
+					<button class="header_button"><a href="#">Shop now</a></button>
+				</li>
+				<li class="image slide2 ">
+					<h2 class="header_heading_2 header_heading_darken">City of Modern</h2>
+					<h1 class="header_heading_1 header_heading_darken">New collection</h1>
+					<p class="header_pharagraph header_heading_darken">Specially made for business woman</p>
+					<button class="header_button button_darken"><a href="#">Shop now</a></button>
+				</li>
+				<li class="image slide3 ">
+					<h2 class="header_heading_2 header_heading_darken">All for all</h2>
+					<h1 class="header_heading_1 header_heading_darken">New collection</h1>
+					<p class="header_pharagraph header_heading_darken">Fits perfectly</p>
+					<button class="header_button button_darken"><a href="#">Shop now</a></button>
+				</li>
+				<li class="image slide4 ">
+					<h2 class="header_heading_2 header_heading_darken">Orient summer</h2>
+					<h1 class="header_heading_1 header_heading_darken">Inspired by the east</h1>
+					<p class="header_pharagraph header_heading_darken">Delicate materials, bright colors</p>
+					<button class="header_button button_darken"><a href="#">Shop now</a></button>
+				</li>
+			</ul>
+
+			<ul class="slider_buttons flex-center">
+				<li class="button_prev" onclick="prevButt('ul.header_slider li')"><a href="#"></a></li>
+				<li class="button_next" onclick="nextButt('ul.header_slider li')"><a href="#"></a></li>
+			</ul>
+		</section>
+
+	</header>
+
+	<main>
+		<!-- Middle Section 1 -->
+		<section class="middle_section_1">
+
+			<h2 class="heading2">Latest Products</h2>
+			
+			<div class="container clearFix row">
+				<a href="#" class="float_left section1_item section1_item_1">
+					<img src="img/middleSection_top_men.jpg" alt="man">
+					<span>Men</span></a>
+				<a href="#" class="float_left section1_item section1_item_2">
+					<img src="img/middleSection_top_woman.jpg" alt="woman">
+					<span>Woman</span></a>
+				<a href="#" class="float_left section1_item section1_item_3">
+					<img src="img/middleSection_top_watches.jpg" alt="watches">
+					<span>Watches</span></a>
+			</div>
+			<div class="container clearFix row">
+				<a href="#" class="float_left section1_bottom_item section1_bottom_item_left">
+					<img src="img/middleSection_bottom_left.jpg" alt="Autumn collection">
+					<span>40% Off<br>Autumn<br>Collection</span></a>
+
+				<a href="#" class="float_left section1_bottom_item section1_bottom_item_right">
+					<img src="img/middleSection_bottom_right.jpg" alt="spirit collection">
+					<span>Mega sale<br>on items from<br>Spirit collection</span></a>
+			</div>
+		</section>
+
+		<!-- Middle Section 2 -->
+		<section class="middle_section_2">
+			<h2 class="heading2">Trending Items</h2>
+
+			<!-- Slider -->
+			<div class=" container section2_slider"> <!--контейнера за слайдера  -->
+
+				<div class="section2_item clearFix shown"> <!--единичния слайдер, който ще се мятка  -->
+					
+					<div class="col-6 float_left section2_item_left">
+						<img src="img/middleSection2_item.jpg" alt="jacket">
+						<a href="#" class="button_small">Read more</a>
+					</div>
+
+					<!-- Slider cloth details -->
+					<div class="col-6 float_left section2_item_right">
+						<div class="cloth_section">
+							<h3 class="heading3">Nathan Stewart jacket</h3>
+							<h5 class="heading5">Spring/Summer Collection</h5>
+							<p>Classic Nathan Stewart Jacket from his latest collection.
+								This item is loved by many just because of it’s simle style.
+								Simple lines, lovely texture,it suits almost everybody. 
+								It comes in six different colors, and all sizes.
+							</p>
+							<h4 class="heading4 hide">Fashion tip:</h4>
+							<p>With this jacket, Nathan Stewart sunglasses go hand in hand!</p>
+						</div>
+					</div>
+
+				<!-- cloth sizes -->
+					<div class="sizes_form hide">
+						<form>								
+							<input type="radio" name="size" value="M" checked="" id="M">
+							<label class="size" for="M">M</label>
+
+							<input type="radio" name="size" value="L" id="L">
+							<label class="size" for="L">L</label>
+
+							<input type="radio" name="size" value="XL" id="XL">
+							<label class="size" for="XL">XL</label>
+
+							<input type="radio" name="size" value="XXL" id="XXL">
+							<label class="size" for="XXL">XXL</label>
+						</form>
+
+						<!-- Middle Section 2 bottom buttons-->
+						<div class="cloth_buttons hide">
+							<button class="section2_button "><a href="#">Shop now</a></button>
+							<button class="section2_button"><a href="#">Size guide</a></button>
+						</div>
+					</div>	
+
+				</div>
+				<!-- end of section2_item -->
+				
+				<!-- section2_item 2 -->
+				<div class="section2_item clearFix"> <!--единичния слайдер, който ще се мятка  -->
+					
+					<div class="col-6 float_left section2_item_left">
+						<img src="img/middleSection2_item_1.jpg" alt="trousers">
+						<a href="#" class="button_small">Read more</a>
+					</div>
+
+					<!-- Slider cloth details -->
+					<div class="col-6 float_left section2_item_right">
+						<div class="cloth_section">
+							<h3 class="heading3">Side-stripe Trousers</h3>
+							<h5 class="heading5">Spring/Summer Collection</h5>
+							<p>The proof that side-stripe trousers are no longer unacceptable for grown-ups was the fact that luxury designers went absolutely mad for them this season. 
+							</p>
+							<h4 class="heading4 hide">Fashion tip:</h4>
+							<p>Colours you’re already well-stocked with are a good place to start – think blue or grey – but don’t be afraid of lighter neutrals and even pastel shades as the weather improves</p>
+						</div>
+					</div>
+					<!-- cloth sizes -->
+					<div class="sizes_form hide">
+						<form>								
+							<input type="radio" name="size" value="M" checked="" id="M">
+							<label class="size" for="M">M</label>
+
+							<input type="radio" name="size" value="L" id="L">
+							<label class="size" for="L">L</label>
+
+							<input type="radio" name="size" value="XL" id="XL">
+							<label class="size" for="XL">XL</label>
+
+							<input type="radio" name="size" value="XXL" id="XXL">
+							<label class="size" for="XXL">XXL</label>
+						</form>
+
+						<!-- Middle Section 2 bottom buttons-->
+						<div class="cloth_buttons hide">
+							<button class="section2_button "><a href="#">Shop now</a></button>
+							<button class="section2_button"><a href="#">Size guide</a></button>
+						</div>
+					</div>
+				</div>
+				<!-- end of section2_item 2 -->
+
+				<!-- section2_item 3 -->
+				<div class="section2_item clearFix"> <!--единичния слайдер, който ще се мятка  -->
+					
+					<div class="col-6 float_left section2_item_left">
+						<img src="img/middleSection2_item_2.jpg" alt="shirt">
+						<a href="#" class="button_small">Read more</a>
+					</div>
+
+					<!-- Slider cloth details -->
+					<div class="col-6 float_left section2_item_right">
+						<div class="cloth_section">
+							<h3 class="heading3">Elegant slim fit shirt</h3>
+							<h5 class="heading5">Spring/Summer Collection</h5>
+							<p>Elegant slim fit shirt Lorem ipsum tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+							</p>
+							<h4 class="heading4 hide">Fashion tip:</h4>
+							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+
+					<!-- cloth sizes -->
+					<div class="sizes_form hide">
+						<form>								
+							<input type="radio" name="size" value="M" checked="" id="M">
+							<label class="size" for="M">M</label>
+
+							<input type="radio" name="size" value="L" id="L">
+							<label class="size" for="L">L</label>
+
+							<input type="radio" name="size" value="XL" id="XL">
+							<label class="size" for="XL">XL</label>
+
+							<input type="radio" name="size" value="XXL" id="XXL">
+							<label class="size" for="XXL">XXL</label>
+						</form>
+
+						<!-- Middle Section 2 bottom buttons-->
+						<div class="cloth_buttons hide">
+							<button class="section2_button "><a href="#">Shop now</a></button>
+							<button class="section2_button"><a href="#">Size guide</a></button>
+						</div>
+					</div>
+				</div>
+				<!-- end of section2_item 3 -->
+			</div>
+			<!-- end of section2 slider -->
+
+			<!--slider buttons-->
+			<div class="col-12 dot_container">
+				<div class="dot" onclick="prevButt('div.section2_slider .section2_item')"></div>
+				<div class="dot" onclick="nextButt('div.section2_slider .section2_item')"></div>
+
+			</div>
+		</section>
+
+		<!-- Middle Section 3 -->
+		<section class="middle_section_3">
+			<h2 class="heading2">From The Blog</h2>
+			
+			<div class="container column"> <!-- container for 2 columns -->
+				<div class="section3_item  section3_item_left col-6">
+					
+					<div><img src="img/fromTheBlog_left.jpg"></div>
+				
+					<h3 class="heading3">German fashion wizards</h3>
+					<h5 class="section3_litle_h">By James Steed | Fashion</h5>
+					<p>
+					This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the 
+					European fashion scene and this year at Paris Fashion Week they 
+					introduced their new collection. 
+					</p>
+
+					<button class="section3_button"><a href="#" >Read more</a></button>
+				</div>
+
+				<div class="section3_item section3_item_right col-6">
+					
+					<div><img src="img/fromTheBlog_right.jpg"></div>
+				
+					<h3 class="heading3">Anne Sttewart’s sunglasses</h3>
+					<h5 class="section3_litle_h">By Marry Beard | Trending</h5>
+					<p>
+					Just amazing! That is how i can describe this person. So creative, so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames, to glass thickness she blew me away...
+					</p>
+
+					<button class="section3_button"><a href="#" >Read more</a></button>
+				</div>
+
+
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer_container">
+			<h2 class="footer_head">Subscibe to our newsletter to receive latest news and offers</h2>
+			<div class="mail_list">
+				<span class="subscribe_ico"></span>
+				<input type="text" name="email" placeholder="E-mail address">
+			</div>
+			<button class="footer_button">Subscribe</button>
+		</div>
+	</footer>
+</body>
+</html>
