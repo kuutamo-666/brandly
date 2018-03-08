@@ -721,7 +721,7 @@ input[type="radio"]:checked + label {
 	.mobile_menu form  input {
 		height: 3em;
 		background-color: transparent;
-		margin-right: 2em;
+		margin-right: 1em;
 		color: #fff;
 		font-size: 0.625em;
 		padding: 0.625em;
